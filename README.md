@@ -1,2 +1,4 @@
 # boilerplate-pdm
-boilerplate prazeres da mesa 2020 regionais.
+boilerplate Prazeres da Mesa 2020 regionais.<br>
+Dev: Caique Sousa <br>
+© Copyright 2020, Prazeres da Mesa - Todos os direitos reservados - Desenvolvido por: Prazeres da Mesa
