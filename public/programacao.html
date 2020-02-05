@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prazeres da Mesa 2020</title>
+    <!-- <link rel="stylesheet" href="./src/style/animate.css"> -->
+    <!-- <link rel="stylesheet" href="../style/index.css"> -->
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+    <div class="container-anuncio">
+        <div class="marquee">
+            <div>
+                <span>|--- Prazeres da Mesa 2020 Faltam <a href="#" style="font-weight: bold;" id="cronometro"></a> dias
+                    para começar o evento ---|</span>
+                <span>|--- Prazeres da Mesa 2020 Faltam <a href="#" style="font-weight: bold;" id="cronometro2"></a>
+                    dias para começar o evento ---|</span>
+                <span>|--- Prazeres da Mesa 2020 Faltam <a href="#" style="font-weight: bold;" id="cronometro3"></a>
+                    dias para começar o evento ---|</span>
+                <span>|--- Prazeres da Mesa 2020 Faltam <a href="#" style="font-weight: bold;" id="cronometro4"></a>
+                    dias para começar o evento ---|</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid container-logo row">
+        <div class="container ">
+            <a href="index.html#homePage" class="logo-topo">
+                <img src="Logo Preto MM.jpg" alt="">
+            </a>
+        </div>
+
+        <!-- Menu Nav -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html#homePage">Home</a>
+                <a href="index.html#bilheteriaPage">Bilheteria</a>
+                <a href="index.html#palestrantesPage">Palestrantes</a>
+                <a href="./programação.html">Programação</a>
+                <a href="index.html#jantarMagnoPage">Jantar Magno</a>
+                <a href="index.html#contatoPage">Contato</a>
+                <a href="index.html#localPage">Local</a>
+            </div>
+        </div>
+        <span class="menuNav" onclick="openNav()">&#9776; </span>
+    </div>
+
+    <section class="programacaoPage pb-5 pt-5" id="programacaoPage">
+        <div class="text-center">
+            <h1>Programação</h1>
+        </div>
+        <ul class="nav md-pills pills-secondary container-fluid d-flex justify-content-center mt-3 mb-3">
+            <li class="nav-item">
+                <a class="nav-link active btn-dark" data-toggle="tab" href="#panel11" role="tab">Dia 10</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-dark" data-toggle="tab" href="#panel12" role="tab">Dia 11</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link btn-dark" data-toggle="tab" href="#panel13" role="tab">Dia 12</a>
+            </li>
+        </ul>
+        <div>
+            <p class="text-center text-white">
+                (Fique atento aos horários e lembre-se de que a nossa programação está sujeita a mudanças.)<br>
+                Confira o regulamento completo nas inscrições e venha viver a gastronomia ao máximo!
+            </p>
+        </div>
+    
+        <div class="container-fluid d-flex">
+            <button type="button" class="btn-termosDeUso btn" data-toggle="modal" data-target="#termosDeUsoModal">
+                O que você precisa saber sobre as aulas
+            </button>
+            <div class="modal fade" id="termosDeUsoModal" tabindex="-1" role="dialog"
+                aria-labelledby="termosDeUsoModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content modal-xl">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="termosDeUsoModalTitle"> O que você precisa saber sobre as aulas</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            • O ingresso é vendido online em www.mesaaovivorio.com.br ou no guichê durante o evento;<br><br>
+
+                            • Todas as aulas têm aproximadamente 45 minutos de duração;<br><br>
+
+                            • As aulas terão controle de entrada de acordo com a ordem de chegada e a capacidade máxima de 
+                            cada sala. Não será permitido a reserva de lugares na aula por terceiros;<br><br>
+
+                            • As receitas estarão disponíveis no perfil de Prazeres da Mesa dentro do app Pip Recipes e, 
+                            posteriormente, em uma edição especial da revista Prazeres da MESA. Não será distribuído material 
+                            impresso durante a aula;<br><br>
+
+                            • Acesso exclusivo para quem adquirir o Passaporte Mesa;<br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tab panels -->
+        <div class="tab-content pt-0">
+
+            <!--Panel 1-->
+            <div class="tab-pane fade in show active" id="panel11" role="tabpanel">
+                <div class="container-programacao">
+                    <div class="componente-prog">
+                        <div class="img-container-prog">
+                            <img src="LogoMM_so a bolinha.png" class="img-prog" alt="">
+                            <p>
+                                Nome: Mundo Mesa 2020
+                            </p>
+                        </div>
+                        <div class="container-fluid text-left">
+                            <p class="text-container-prog">
+                                <b>Dia:</b> 13/06<br>
+                                <b>Tema:</b> Mundo Mesa 2020<br>
+                                <b>Horario:</b> 13:00h<br>
+                                <b>Duração:</b> 1h<br>
+                                <b>Local:</b> Cozinha 1<br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, modi nisi?
+                                Nihil incidunt vero et illum voluptatum odio architecto velit, reprehenderit
+                                consequuntur! Deserunt in vitae praesentium! Pariatur assumenda quia eaque.<br><br>
+                                Salas sujeitas a lotação.
+                            </p>
+                            <a href="#" class="btn btn-dark mb-5">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="componente-prog">
+                        <div class="img-container-prog">
+                            <img src="LogoMM_so a bolinha.png" class="img-prog" alt="">
+                            <p>
+                                Nome: Mundo Mesa 2020
+                            </p>
+                        </div>
+                        <div class="container-fluid text-left">
+                            <p class="text-container-prog">
+                                <b>Dia:</b> 13/06<br>
+                                <b>Tema:</b> Mundo Mesa 2020<br>
+                                <b>Horario:</b> 13:00h<br>
+                                <b>Duração:</b> 1h<br>
+                                <b>Local:</b> Cozinha 1<br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, modi nisi?
+                                Nihil incidunt vero et illum voluptatum odio architecto velit, reprehenderit
+                                consequuntur! Deserunt in vitae praesentium! Pariatur assumenda quia eaque.<br><br>
+                                Salas sujeitas a lotação.
+                            </p>
+                            <a href="#" class="btn btn-dark mb-5">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="componente-prog">
+                        <div class="img-container-prog">
+                            <img src="LogoMM_so a bolinha.png" class="img-prog" alt="">
+                            <p>
+                                Nome: Mundo Mesa 2020
+                            </p>
+                        </div>
+                        <div class="container-fluid text-left">
+                            <p class="text-container-prog">
+                                <b>Dia:</b> 13/06<br>
+                                <b>Tema:</b> Mundo Mesa 2020<br>
+                                <b>Horario:</b> 13:00h<br>
+                                <b>Duração:</b> 1h<br>
+                                <b>Local:</b> Cozinha 1<br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, modi nisi?
+                                Nihil incidunt vero et illum voluptatum odio architecto velit, reprehenderit
+                                consequuntur! Deserunt in vitae praesentium! Pariatur assumenda quia eaque.<br><br>
+                                Salas sujeitas a lotação.
+                            </p>
+                            <a href="#" class="btn btn-dark mb-5">Veja mais</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Panel 1-->
+
+            <!--Panel 2-->
+            <div class="tab-pane fade" id="panel12" role="tabpanel">
+                <div class="container-programacao">
+                    <div class="componente-prog2">
+                        <div class="img-container-prog">
+                            <img src="LogoMM_so a bolinha.png" class="img-prog" alt="">
+                            <p>
+                                Nome: Mundo Mesa 2020
+                            </p>
+                        </div>
+                        <div class="container-fluid text-left">
+                            <p class="text-container-prog">
+                                <b>Dia:</b> 13/06<br>
+                                <b>Tema:</b> Mundo Mesa 2020<br>
+                                <b>Horario:</b> 13:00h<br>
+                                <b>Duração:</b> 1h<br>
+                                <b>Local:</b> Cozinha 1<br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, modi nisi?
+                                Nihil incidunt vero et illum voluptatum odio architecto velit, reprehenderit
+                                consequuntur! Deserunt in vitae praesentium! Pariatur assumenda quia eaque.<br><br>
+                                Salas sujeitas a lotação.
+                            </p>
+                            <a href="#" class="btn btn-dark mb-5">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="componente-prog2">
+                        <div class="img-container-prog">
+                            <img src="LogoMM_so a bolinha.png" class="img-prog" alt="">
+                            <p>
+                                Nome: Mundo Mesa 2020
+                            </p>
+                        </div>
+                        <div class="container-fluid text-left">
+                            <p class="text-container-prog">
+                                <b>Dia:</b> 13/06<br>
+                                <b>Tema:</b> Mundo Mesa 2020<br>
+                                <b>Horario:</b> 13:00h<br>
+                                <b>Duração:</b> 1h<br>
+                                <b>Local:</b> Cozinha 1<br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, modi nisi?
+                                Nihil incidunt vero et illum voluptatum odio architecto velit, reprehenderit
+                                consequuntur! Deserunt in vitae praesentium! Pariatur assumenda quia eaque.<br><br>
+                                Salas sujeitas a lotação.
+                            </p>
+                            <a href="#" class="btn btn-dark mb-5">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="componente-prog2">
+                        <div class="img-container-prog">
+                            <img src="LogoMM_so a bolinha.png" class="img-prog" alt="">
+                            <p>
+                                Nome: Mundo Mesa 2020
+                            </p>
+                        </div>
+                        <div class="container-fluid text-left">
+                            <p class="text-container-prog">
+                                <b>Dia:</b> 13/06<br>
+                                <b>Tema:</b> Mundo Mesa 2020<br>
+                                <b>Horario:</b> 13:00h<br>
+                                <b>Duração:</b> 1h<br>
+                                <b>Local:</b> Cozinha 1<br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, modi nisi?
+                                Nihil incidunt vero et illum voluptatum odio architecto velit, reprehenderit
+                                consequuntur! Deserunt in vitae praesentium! Pariatur assumenda quia eaque.<br><br>
+                                Salas sujeitas a lotação.
+                            </p>
+                            <a href="#" class="btn btn-dark mb-5">Veja mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.Panel 2-->
+
+            <!--Panel 3-->
+            <div class="tab-pane fade" id="panel13" role="tabpanel">
+                <div class="container-programacao">
+                    <div class="componente-prog3">
+                        <div class="img-container-prog">
+                            <img src="LogoMM_so a bolinha.png" class="img-prog" alt="">
+                            <p>
+                                Nome: Mundo Mesa 2020
+                            </p>
+                        </div>
+                        <div class="container-fluid text-left">
+                            <p class="text-container-prog">
+                                <b>Dia:</b> 13/06<br>
+                                <b>Tema:</b> Mundo Mesa 2020<br>
+                                <b>Horario:</b> 13:00h<br>
+                                <b>Duração:</b> 1h<br>
+                                <b>Local:</b> Cozinha 1<br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, modi nisi?
+                                Nihil incidunt vero et illum voluptatum odio architecto velit, reprehenderit
+                                consequuntur! Deserunt in vitae praesentium! Pariatur assumenda quia eaque.<br><br>
+                                Salas sujeitas a lotação.
+                            </p>
+                            <a href="#" class="btn btn-dark mb-5">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="componente-prog3">
+                        <div class="img-container-prog">
+                            <img src="LogoMM_so a bolinha.png" class="img-prog" alt="">
+                            <p>
+                                Nome: Mundo Mesa 2020
+                            </p>
+                        </div>
+                        <div class="container-fluid text-left">
+                            <p class="text-container-prog">
+                                <b>Dia:</b> 13/06<br>
+                                <b>Tema:</b> Mundo Mesa 2020<br>
+                                <b>Horario:</b> 13:00h<br>
+                                <b>Duração:</b> 1h<br>
+                                <b>Local:</b> Cozinha 1<br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, modi nisi?
+                                Nihil incidunt vero et illum voluptatum odio architecto velit, reprehenderit
+                                consequuntur! Deserunt in vitae praesentium! Pariatur assumenda quia eaque.<br><br>
+                                Salas sujeitas a lotação.
+                            </p>
+                            <a href="#" class="btn btn-dark mb-5">Veja mais</a>
+                        </div>
+                    </div>
+                    <div class="componente-prog3">
+                        <div class="img-container-prog">
+                            <img src="LogoMM_so a bolinha.png" class="img-prog" alt="">
+                            <p>
+                                Nome: Mundo Mesa 2020
+                            </p>
+                        </div>
+                        <div class="container-fluid text-left">
+                            <p class="text-container-prog">
+                                <b>Dia:</b> 13/06<br>
+                                <b>Tema:</b> Mundo Mesa 2020<br>
+                                <b>Horario:</b> 13:00h<br>
+                                <b>Duração:</b> 1h<br>
+                                <b>Local:</b> Cozinha 1<br>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, modi nisi?
+                                Nihil incidunt vero et illum voluptatum odio architecto velit, reprehenderit
+                                consequuntur! Deserunt in vitae praesentium! Pariatur assumenda quia eaque.<br><br>
+                                Salas sujeitas a lotação.
+                            </p>
+                            <a href="#" class="btn btn-dark mb-5">Veja mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/.Panel 3-->
+        </div>
+    </section>
+
+    <div class="social-media">
+        <h5>
+            Redes Sociais:
+        </h5>
+        <div class="row justify-content-center">
+            <div class="social-icon-box col-sm-2">
+                <a href="https://www.facebook.com/prazeresdamesa" target="_blank">
+                    <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/facebook-circular.svg"
+                        alt="Facebook" class="social-icon animated" />
+                </a>
+            </div>
+            <div class="social-icon-box col-sm-2">
+                <a href="https://www.instagram.com/prazeresdamesa/" target="_blank">
+                    <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/instagram-circular.svg"
+                        alt="Instagram" class="social-icon animated" />
+                </a>
+            </div>
+            <div class="social-icon-box col-sm-2">
+                <a href="https://twitter.com/prazeresdamesa" target="_blank">
+                    <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/twitter-circular.svg"
+                        alt="Twitter" class="social-icon animated" />
+                </a>
+            </div>
+            <div class="social-icon-box col-sm-2">
+                <a href="https://www.youtube.com/channel/UCq9WnyF9HTPsMJ-Khwr1c0A" target="_blank">
+                    <img src="https://prazeresdamesa.uol.com.br/wp-content/uploads/2019/04/youtube-circular.svg"
+                        alt="Youtube" class="social-icon animated" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row txt-rodape">
+        <h4>Realização</h4>
+    </div>
+    <div class="rodape-logos row">
+        <div class="logos-rodape col-12">
+            <img src="Logo Preto MM.jpg" class="logos-img img-miniatura" alt="...">
+        </div>
+        <div class="logos-rodape col-12">
+            <img src="Logo Preto MM.jpg" class="logos-img img-miniatura" alt="...">
+        </div>
+        <div class="logos-rodape col-12">
+            <img src="Logo Preto MM.jpg" class="logos-img img-miniatura" alt="...">
+        </div>
+        <div class="logos-rodape col-12">
+            <img src="Logo Preto MM.jpg" class="logos-img img-miniatura" alt="...">
+        </div>
+    </div>
+    <div class="row txt-rodape">
+        <h4>Patrocínio</h4>
+    </div>
+    <div class="rodape-logos row">
+        <div class="logos-rodape col-12">
+            <img src="Logo Preto MM.jpg" class="logos-img img-miniatura" alt="...">
+        </div>
+        <div class="logos-rodape col-12">
+            <img src="Logo Preto MM.jpg" class="logos-img img-miniatura" alt="...">
+        </div>
+        <div class="logos-rodape col-12">
+            <img src="Logo Preto MM.jpg" class="logos-img img-miniatura" alt="...">
+        </div>
+        <div class="logos-rodape col-12">
+            <img src="Logo Preto MM.jpg" class="logos-img img-miniatura" alt="...">
+        </div>
+        <div class="logos-rodape col-12">
+            <img src="Logo Preto MM.jpg" class="logos-img img-miniatura" alt="...">
+        </div>
+    </div>
+    <footer>
+        <div class="assinatura">
+            <p>
+                © Copyright 2020, Prazeres da Mesa - Todos os direitos reservados - Desenvolvido por: Prazeres da Mesa
+            </p>
+        </div>
+    </footer>
+<script type="text/javascript" src="main.js"></script></body>
+<!-- <script src="main.js"></script> -->
+<!-- <script src="../index.js"></script> -->
+<!-- <script src="./src/index.js"></script> -->
+<!-- <script src="./node_modules/wowjs/dist/wow.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<!-- <script src="/node_modules/wowjs/dist/wow.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script> -->
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+<script src="./src/gsap.js"></script> -->
+<!-- Wow -->
+<script>
+    new WOW().init();
+</script>
+<script>
+    //Menu
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%"
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%"
+    }
+
+    // Animação AnimateCSS
+    function animateCSS(element, animationName, callback) {
+        const btn1 = document.querySelector('#btnMagic1')
+        btn1.classList.add('animated', 'rubberBand')
+
+        function handleAnimationEnd() {
+            btn1.classList.remove('animated', 'rubberBand')
+            btn1.removeEventListener('animationend', handleAnimationEnd)
+
+            if (typeof callback === 'function') callback()
+        }
+        btn1.addEventListener('animationend', handleAnimationEnd)
+    }
+
+    function animateCSS2(element, animationName, callback) {
+        const btn2 = document.querySelector('.btnMagic2')
+        btn2.classList.add('animated', 'jello')
+
+        function handleAnimationEnd() {
+            btn2.classList.remove('animated', 'jello')
+            btn2.removeEventListener('animationend', handleAnimationEnd)
+
+            if (typeof callback === 'function') callback()
+        }
+
+        btn2.addEventListener('animationend', handleAnimationEnd)
+    }
+
+    function animateCSS3(element, animationName, callback) {
+        const btn3 = document.querySelector('.btnMagic3')
+        btn3.classList.add('animated', 'shake')
+
+        function handleAnimationEnd() {
+            btn3.classList.remove('animated', 'shake')
+            btn3.removeEventListener('animationend', handleAnimationEnd)
+
+            if (typeof callback === 'function') callback()
+        }
+
+        btn3.addEventListener('animationend', handleAnimationEnd)
+    }
+</script>
+<!-- <script>
+    // init controller
+    var controller = new ScrollMagic.Controller();
+</script> -->
+<script>
+    // build scene
+    // var scene = new ScrollMagic.Scene({
+    //         triggerElement: "#trigger1"
+    //     })
+    //     .setTween("#animate1", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
+    //     .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    //     .addTo(controller);
+</script>
+</html>
