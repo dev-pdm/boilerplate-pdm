@@ -3,6 +3,7 @@ import './style/index'
 import 'wowjs'
 import './pages/index-pages'
 import './js/modernizr-custom'
+// import './js/animacao'
 
 // import logo1 from './assets/Logo Preto MM.jpg'
 // import logo2 from './assets/LogoMM_so a bolinha.png'

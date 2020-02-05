@@ -16,6 +16,7 @@ module.exports = {
     output: {
         filename: '[name].js',
         path: path.join(__dirname, 'public'),
+        chunkFilename:'[name].[id].js',
         // publicPath: '/dist/'
     },
     devServer: {
@@ -57,6 +58,15 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.bundle\.js$/,
+                // use: 'bundle-loader',
+                loader: 'bundle-loader',
+                options: {
+                    lazy: true,
+                    name: '[name]'
+                }
+            },
+            {
                 test: /\.m?js$/,
                 exclude: /(node_modules|bower_components)/,
                 use: {
@@ -71,7 +81,7 @@ module.exports = {
                 test: /\.html$/i,
                 loader: 'html-loader',
             },{
-                test: /\.css$/,
+                test: /\.s?[ac]ss$/,
                 use: [
                     modoDev ? 'style-loader' : MiniCssExtractPlugin.loader,
                     // MiniCssExtractPlugin.loader,
