@@ -53,6 +53,10 @@ module.exports = {
         new tinyPngWebpackPlugin({
             key:"M38Y2383ZRQ5HF1wXDXwHF41KnqslLwg",
             ext: ['png', 'jpeg', 'jpg'],//img ext name
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
         })
     ],
     module: {

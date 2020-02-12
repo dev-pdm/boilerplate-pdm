@@ -3,6 +3,9 @@ import './style/index'
 import 'wowjs'
 import './pages/index-pages'
 import './js/modernizr-custom'
+import $ from 'jquery'
+window.jQuery = $;
+window.$ = $;
 // import './js/animacao'
 
 // import logo1 from './assets/Logo Preto MM.jpg'
@@ -10,9 +13,29 @@ import './js/modernizr-custom'
 
 // document.querySelectorAll('.logo1').innerHTML = `<img src="${logo1}" />`
 
+
+$(document).ready(function ($) {
+    const $formulario = $("#formContato");
+
+    $formulario.submit(e => {
+        e.preventDefault();
+        const $action = $formulario.attr('action');
+        const $data = $formulario.serialize();
+        $.post($action, $data).then(() => {
+            Swal.fire({
+                icon: 'success',
+                title: 'Mensagem Enviada!',
+                text: 'Muito obrigado!',
+                footer: '<a href="/">Voltar para home</a>'
+            });
+        });
+    });
+
+});
+
 const dataFinal = new Date("Sep 25, 2020 23:59:00").getTime()
 
-    let crono = setInterval(function() {
+let crono = setInterval(function () {
 
     let dataAtual = new Date().getTime();
     let distance = dataFinal - dataAtual;
@@ -20,19 +43,19 @@ const dataFinal = new Date("Sep 25, 2020 23:59:00").getTime()
     let horas = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutos = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-    document.getElementById("cronometro").innerHTML = dias + "d " + horas + "h "
-    + minutos + "m ";
+    document.getElementById("cronometro").innerHTML = dias + "d " + horas + "h " +
+        minutos + "m ";
 
     if (distance < 0) {
-        
-    clearInterval(crono);
+
+        clearInterval(crono);
         document.getElementById("cronometrozero").innerHTML = "Encerou o evento";
     }
 }, 1000)
 
 let dataFinal2 = new Date("Sep 25, 2020 23:59:00").getTime()
 
-    let crono2 = setInterval(function() {
+let crono2 = setInterval(function () {
 
     let dataAtual2 = new Date().getTime();
     let distance2 = dataFinal2 - dataAtual2;
@@ -40,19 +63,19 @@ let dataFinal2 = new Date("Sep 25, 2020 23:59:00").getTime()
     let horas2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutos2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
 
-    document.getElementById("cronometro2").innerHTML = dias2 + "d " + horas2 + "h "
-    + minutos2 + "m ";
+    document.getElementById("cronometro2").innerHTML = dias2 + "d " + horas2 + "h " +
+        minutos2 + "m ";
 
     if (distance2 < 0) {
-        
-    clearInterval(crono2);
+
+        clearInterval(crono2);
         document.getElementById("cronometrozero2").innerHTML = "Encerou o evento";
     }
 }, 1000)
 
 let dataFinal3 = new Date("Sep 25, 2020 23:59:00").getTime()
 
-    let crono3 = setInterval(function() {
+let crono3 = setInterval(function () {
 
     let dataAtual3 = new Date().getTime();
     let distance3 = dataFinal3 - dataAtual3;
@@ -60,19 +83,19 @@ let dataFinal3 = new Date("Sep 25, 2020 23:59:00").getTime()
     let horas3 = Math.floor((distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutos3 = Math.floor((distance3 % (1000 * 60 * 60)) / (1000 * 60));
 
-    document.getElementById("cronometro3").innerHTML = dias3 + "d " + horas3 + "h "
-    + minutos3 + "m ";
+    document.getElementById("cronometro3").innerHTML = dias3 + "d " + horas3 + "h " +
+        minutos3 + "m ";
 
     if (distance3 < 0) {
-        
-    clearInterval(crono3);
+
+        clearInterval(crono3);
         document.getElementById("cronometrozero3").innerHTML = "Encerou o evento";
     }
 }, 1000)
 
 let dataFinal4 = new Date("Sep 25, 2020 23:59:00").getTime()
 
-    let crono4 = setInterval(function() {
+let crono4 = setInterval(function () {
 
     let dataAtual4 = new Date().getTime();
     let distance4 = dataFinal4 - dataAtual4;
@@ -80,12 +103,12 @@ let dataFinal4 = new Date("Sep 25, 2020 23:59:00").getTime()
     let horas4 = Math.floor((distance4 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     let minutos4 = Math.floor((distance4 % (1000 * 60 * 60)) / (1000 * 60));
 
-    document.getElementById("cronometro4").innerHTML = dias4 + "d " + horas4 + "h "
-    + minutos4 + "m ";
+    document.getElementById("cronometro4").innerHTML = dias4 + "d " + horas4 + "h " +
+        minutos4 + "m ";
 
     if (distance4 < 0) {
-        
-    clearInterval(crono4);
+
+        clearInterval(crono4);
         document.getElementById("cronometrozero4").innerHTML = "Encerou o evento";
     }
 }, 1000)
