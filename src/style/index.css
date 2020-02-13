@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* Autor: Caique Sousa */
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 @charset 'UTF-8';
@@ -31,11 +33,18 @@ body {
     margin-right: 0px !important; 
     margin-left: 0px !important;
 }
+
 .title-session{
     color: black;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
+}
+
+@media(max-width: 991.98px){
+    .title-session h1{
+        font-size: 2rem;
+    }
 }
 
 /* Marquee Anuncio topo */
@@ -114,7 +123,7 @@ body {
 
 .overlay a {
     padding: 8px;
-    font-size: 36px;
+    font-size: 2.2rem;
     color: #ffffff;
     display: block;
     -webkit-transition: 0.3s ease-in-out;
@@ -126,7 +135,9 @@ body {
 .overlay a:hover,
 .overlay a:focus {
     color: #bbbbbb;
-    transform: scaleX(1.1);
+    -webkit-transform: scaleX(1.1);
+        -ms-transform: scaleX(1.1);
+            transform: scaleX(1.1);
 }
 
 .overlay .closebtn {
@@ -161,7 +172,9 @@ body {
 
 .menuNav:hover{
     color: crimson;
-    transform: scaleX(1.2);
+    -webkit-transform: scaleX(1.2);
+        -ms-transform: scaleX(1.2);
+            transform: scaleX(1.2);
 }
 
 .logo-topo img {
@@ -175,6 +188,15 @@ body {
 .container-logo{
     margin-right: 0px !important;
     margin-left: 0px !important;
+}
+
+@media (max-width: 992px) { 
+    .logo-topo img{
+        max-width: 80px;
+    }
+    .overlay a{
+        font-size: 1.4rem;
+    }
 }
 
 /* @media (max-width: 991.98px) {
@@ -267,9 +289,35 @@ body {
             align-items: center;
 }
 
+.arrowHome{
+    text-align: center;
+    display: block;
+    padding: 10px;
+    padding-top: 3px;
+}
+
+.icoArrowHome{
+    padding-top: 3px;
+    font-size: 4rem;
+    color: crimson;
+    text-shadow: 3px 3px 10px black; 
+}
+
 @media (max-width: 992px) { 
     .container-animation{
         display: block;
+    }
+    .text-container{
+        font-size: 1.1rem;
+    }
+    .img-container{
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 992px) { 
+    .text-container{
+        font-size: 0.9rem;
     }
 }
 
@@ -332,6 +380,19 @@ body {
     font-weight: 700;
     background-color: grey;
     border-color:#000000; 
+}
+
+@media (max-width: 991.98px) { 
+    .card-bilheteria{
+        max-width: 200px;
+        padding:4%;
+    }
+    .card-text{
+        font-size: 0.7rem;
+    }
+    .text-center{
+        font-size: 0.9rem;
+    }
 }
 
 /* Palestrantes */
@@ -454,6 +515,12 @@ body {
 .vertical.flip-container:hover .flipper {
     -webkit-transform: rotateX(-180deg);
             transform: rotateX(-180deg);
+}
+
+@media (max-width: 991.98px) { 
+    .back{
+        font-size: 0.9rem;
+    }
 }
 
 /* Programação */
@@ -609,6 +676,10 @@ body {
     color:black ;
 }
 
+@media (max-width: 991.98px) { 
+    
+}
+
 /* Contato */
 .contatoPage{
     width: 100%;
@@ -682,6 +753,7 @@ body {
 @media (max-width: 991.98px) {
     .contato-p{
         margin-right: 0px;
+        font-size: 0.8rem;
     }
 }
 
@@ -709,6 +781,12 @@ body {
             align-items: center;
 }
 
+@media (max-width: 991.98px){
+    .text-local{
+        font-size: 0.8rem;
+    }
+}
+
 /* Rodape */
 .txt-rodape{
     width: 100%;
@@ -724,9 +802,15 @@ body {
 }
 .rodape-logos{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 10px;
     background-color: #ffffff;
 }
@@ -735,8 +819,12 @@ body {
     width: 100%;
     max-width: 250px;
     padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 
 .logos-img{
@@ -806,3 +894,8 @@ footer{
     font-weight: 500;
 }
 
+@media (max-width: 991.98px){
+    .assinatura p{
+        font-size: 0.8rem;
+    }
+}

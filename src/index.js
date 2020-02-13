@@ -14,6 +14,7 @@ window.$ = $;
 // document.querySelectorAll('.logo1').innerHTML = `<img src="${logo1}" />`
 
 
+// formulario modal sucess
 $(document).ready(function ($) {
     const $formulario = $("#formContato");
 
@@ -33,6 +34,8 @@ $(document).ready(function ($) {
 
 });
 
+
+// Marquee Topo cronometro
 const dataFinal = new Date("Sep 25, 2020 23:59:00").getTime()
 
 let crono = setInterval(function () {
