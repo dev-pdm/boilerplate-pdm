@@ -93,15 +93,24 @@ body {
     margin-left: 0px !important;
 }
 
+<<<<<<< HEAD
 .title-session {
+=======
+.title-session{
+>>>>>>> e8eeabcc2db3904e586c2760a015852f35bd9557
     color: black;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 700;
 }
 
+<<<<<<< HEAD
 @media(max-width: 991.98px) {
     .title-session h1 {
+=======
+@media(max-width: 991.98px){
+    .title-session h1{
+>>>>>>> e8eeabcc2db3904e586c2760a015852f35bd9557
         font-size: 2rem;
     }
 }
@@ -195,8 +204,13 @@ body {
 .overlay a:focus {
     color: #bbbbbb;
     -webkit-transform: scaleX(1.1);
+<<<<<<< HEAD
     -ms-transform: scaleX(1.1);
     transform: scaleX(1.1);
+=======
+        -ms-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+>>>>>>> e8eeabcc2db3904e586c2760a015852f35bd9557
 }
 
 .overlay .closebtn {
@@ -232,8 +246,13 @@ body {
 .menuNav:hover {
     color: crimson;
     -webkit-transform: scaleX(1.2);
+<<<<<<< HEAD
     -ms-transform: scaleX(1.2);
     transform: scaleX(1.2);
+=======
+        -ms-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+>>>>>>> e8eeabcc2db3904e586c2760a015852f35bd9557
 }
 
 .logo-topo img {
@@ -249,12 +268,20 @@ body {
     margin-left: 0px !important;
 }
 
+<<<<<<< HEAD
 @media (max-width: 992px) {
     .logo-topo img {
         max-width: 80px;
     }
 
     .overlay a {
+=======
+@media (max-width: 992px) { 
+    .logo-topo img{
+        max-width: 80px;
+    }
+    .overlay a{
+>>>>>>> e8eeabcc2db3904e586c2760a015852f35bd9557
         font-size: 1.4rem;
     }
 }
@@ -407,6 +434,7 @@ body {
     padding-top: 3px;
 }
 
+<<<<<<< HEAD
 .icoArrowHome {
     padding-top: 3px;
     font-size: 4rem;
@@ -424,12 +452,41 @@ body {
     }
 
     .img-container {
+=======
+.arrowHome{
+    text-align: center;
+    display: block;
+    padding: 10px;
+    padding-top: 3px;
+}
+
+.icoArrowHome{
+    padding-top: 3px;
+    font-size: 4rem;
+    color: crimson;
+    text-shadow: 3px 3px 10px black; 
+}
+
+@media (max-width: 992px) { 
+    .container-animation{
+        display: block;
+    }
+    .text-container{
+        font-size: 1.1rem;
+    }
+    .img-container{
+>>>>>>> e8eeabcc2db3904e586c2760a015852f35bd9557
         max-width: 600px;
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 992px) {
     .text-container {
+=======
+@media (max-width: 992px) { 
+    .text-container{
+>>>>>>> e8eeabcc2db3904e586c2760a015852f35bd9557
         font-size: 0.9rem;
     }
 }
@@ -502,6 +559,19 @@ body {
     }
 
     .text-center {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .card-bilheteria{
+        max-width: 200px;
+        padding:4%;
+    }
+    .card-text{
+        font-size: 0.7rem;
+    }
+    .text-center{
         font-size: 0.9rem;
     }
 }
@@ -630,6 +700,12 @@ body {
 
 @media (max-width: 991.98px) {
     .back {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .back{
         font-size: 0.9rem;
     }
 }
@@ -791,7 +867,13 @@ body {
     color: black;
 }
 
+<<<<<<< HEAD
 @media (max-width: 991.98px) {}
+=======
+@media (max-width: 991.98px) { 
+    
+}
+>>>>>>> e8eeabcc2db3904e586c2760a015852f35bd9557
 
 /* Contato */
 .contatoPage {
@@ -900,6 +982,12 @@ body {
     }
 }
 
+@media (max-width: 991.98px){
+    .text-local{
+        font-size: 0.8rem;
+    }
+}
+
 /* Rodape */
 .txt-rodape {
     width: 100%;
@@ -920,11 +1008,19 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+<<<<<<< HEAD
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+=======
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+>>>>>>> e8eeabcc2db3904e586c2760a015852f35bd9557
     padding: 10px;
     background-color: #ffffff;
 }
@@ -937,8 +1033,13 @@ body {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
+<<<<<<< HEAD
     -ms-flex-pack: center;
     justify-content: center;
+=======
+        -ms-flex-pack: center;
+            justify-content: center;
+>>>>>>> e8eeabcc2db3904e586c2760a015852f35bd9557
 }
 
 .logos-img {
@@ -1008,8 +1109,13 @@ footer {
     font-weight: 500;
 }
 
+<<<<<<< HEAD
 @media (max-width: 991.98px) {
     .assinatura p {
+=======
+@media (max-width: 991.98px){
+    .assinatura p{
+>>>>>>> e8eeabcc2db3904e586c2760a015852f35bd9557
         font-size: 0.8rem;
     }
 }
